@@ -2,95 +2,175 @@
 <html>
     <head>
         <title>Portfolio</title>
-            <style>
-            .flex-container {
-                display: flex;
-                border-style: solid;
-                border-width: 2px;
-                border-color: black;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                                
-            }
-            .main {
-                height: : 300px;
-                width: 100%;
-                border-style: solid;
-                border-width: 1px;
-                border-color: black;
-                text-align: center;
+        <style>
+        
+        
+        body{
+            background-image: url("background.jpg");
+            
 
-            }
+        }
 
-            #photo{
-                border-style: solid;
-                width: 100px;
-                height: 100px;
-                align-content: center;
-            }
-            #prevproj{
-                border-style: solid;
-                width: 100px;
-                height: 100px;
-                align-content: center;
-            }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            
 
+        }
+        
+        .header{
+            background-color:#b3a398da;
 
+        }
+        .header-logo{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+                        
+        }
 
+        .nav-bar{
+            display: flex;
+            justify-content: space-evenly;    
+            padding: 10px;   
 
+        }
 
-            </style>
+        .main{
+            background-color:#bbc3a4d5;
+            padding-bottom: 25px;
+
+        }
+
+        .main-photo,.main-prev_proj, .main-skills, .main-auto_bio{
+            text-align: center;
+
+        }
+
+        .projects{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+            
+            
+        }
+
+        .skills-and-bio{
+            display: flex;
+            flex-direction:row;
+            justify-content:space-evenly;
+            
+
+            
+            
+        }   
+
+        .footer{
+            display: flex;
+            background-color:#b3a398da;
+            padding: 20px;
+            
+
+        }
+        .footer-desc{
+            margin-left: 10px;
+            margin-top: 7px;
+
+        }
+
+        </style>
+
     </head>
-
+    
     <body>
+
         <div class="flex-container">
-            <div class="header" >
-                <h1>Logo and Navigation</h1>
-
-            </div>
-
-            <div class="main">            
-
-                <div class="photo">
-                    <h2>Featured Photo</h2>
-                    <div id=photo>
-                        insert photo
+            <div class="header">
+                <div class="header-logo">
+                    <img src="uplb-logo.png" alt="logo" width="100px" height="100px">
+                </div>    
+                <div class="nav-bar">
+                    <div class="icons" id="photo-icon">
+                        <a href="#main-photo"><img src="profile.png" alt="photo" width="25px" height="25px"></a>
+                    </div>
+                    <div class="icons" id="proj-icon">
+                        <a href="#main-prev_proj"><img src="projects.png" alt="photo" width="25px" height="25px"></a>
+                    </div>
+                    <div class="icons" id="skills-icon">
+                        <a href="#main-skills"><img src="skills.png" alt="photo" width="25px" height="25px"></a>
+                    </div>
+                    <div class="icons" id="-auto_bio-icon">
+                        <a href="#main-auto_bio"><img src="auto-bio.png" alt="photo" width="25px" height="25px"></a>
                     </div>
                 </div>
 
-
-                <div class="prevproj">
-                    <h2>Previous Project</h2>
-                    <div id=prevproj>
-                        insert photo
-                    </div>
                 </div>
 
+                <div class="main">
 
-                <div class="skills">
-                    <h2>Skills</h2>
-                    <div id=skills>
-                        insert photo
+                    <div class="main-photo" id="main-photo">
+                        <div class="photo"><h4>Featured Photo</h4>
+                        <img src="sobaybay.jpg" alt="sobaybay" width="275px" height="275px">
+                        </div>
                     </div>
-                </div>
+                    
+                    <div class="main-prev_proj" id="main-prev_proj">
+                        <div><h4>Previous Projects</h4></div>
+                        <div class="projects">
+                            <div class="proj">
+                                <img src="proj1.png" alt="proj1"  width="300px" height="200px">
+                            </div>
+                            <div class="proj">
+                                <img src="proj2.jpg" alt="proj2"  width="300px" height="200px">
+                            </div>
+                            <div class="proj">
+                                <img src="proj3.png" alt="proj3"  width="300px" height="200px">
+                            </div>
+                            <div class="proj">
+                                <img src="proj4.png" alt="proj4"  width="300px" height="200px">
+                            </div>
 
-
-               <div class="autobio">
-                    <h2>Auto Biography</h2>
-                    <div id=prevproj>
-                        insert auto bio
+                        </div>
                     </div>
+
+                    <div class="skills-and-bio">
+                        <div class="main-skills" id="main-skills">
+                            <h4>Skills</h4>
+                            <div class ="desc">
+                                <img src="skills-desc.png" alt="skill-desc"  width="500px" height="281px">
+                            </div>             
+                        </div>
+
+                        <div class="main-auto_bio" id="main-auto_bio">
+                            <h4>Autobiography</h4>
+                            <div class ="desc">
+                                <img src="auto_bio-desc.png" alt="auto_bio-desc"  width="500px" height="281px">
+                            </div>   
+
+                        </div>               
+
                 </div>
-
-
+                
             </div>
 
             <div class="footer">
-                 <h2>3</h2>
+                <div class="footer-img">
+                    <img src="uplb-logo.png" alt="logo" width="100" height="100">
+                </div>
+                <div class="footer-desc">
+                    University of the Philippines Los Baños
+                    <br>
+                    sobaybay@up.edu.ph
+                    <br>
+                    Copyright Information
+                    <br>
+                    <a href="#top">Back To Top</a>
+                </div>
+            </div>  
 
-            </div>
         </div>
+
     </body>
 
 </html>
+
